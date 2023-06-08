@@ -31,9 +31,7 @@ abstract: |
 
 
 ---
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(cache = FALSE, echo = TRUE, message = FALSE, warning = FALSE)
-```
+
 
 <!-- ======================================================================= -->
 <!-- ============================== NOTLAR ================================= -->

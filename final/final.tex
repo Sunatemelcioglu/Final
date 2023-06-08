@@ -1,0 +1,292 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+%
+\documentclass[
+  12pt,
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage[margin=1in]{geometry}
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newlength{\cslentryspacingunit} % times entry-spacing
+\setlength{\cslentryspacingunit}{\parskip}
+\newenvironment{CSLReferences}[2] % #1 hanging-ident, #2 entry spacing
+ {% don't indent paragraphs
+  \setlength{\parindent}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1
+  \let\oldpar\par
+  \def\par{\hangindent=\cslhangindent\oldpar}
+  \fi
+  % set entry spacing
+  \setlength{\parskip}{#2\cslentryspacingunit}
+ }%
+ {}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{#1\hfill\break}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{#1}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}\break}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+\usepackage{polyglossia}
+\setmainlanguage{turkish}
+\usepackage{booktabs}
+\usepackage{caption}
+\captionsetup[table]{skip=10pt}
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  pdftitle={Şampiyonluk Mücadelesi Olan Superbowl'u Kazanmayı Etkileyen Faktörler Nelerdir?},
+  pdfauthor={Suna Temelcioğlu},
+  colorlinks=true,
+  linkcolor={Maroon},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={blue},
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Şampiyonluk Mücadelesi Olan Superbowl'u Kazanmayı Etkileyen Faktörler Nelerdir?}
+\author{Suna Temelcioğlu\footnote{19080245, \href{https://github.com/Sunatemelcioglu}{Github Repo}
+  \# Final Hakkında Önemli Bilgiler}}
+\date{}
+
+\begin{document}
+\maketitle
+\begin{abstract}
+Amerika Birleşik Devletlerinde popüler spor organizasyonu olan Superbowl etkinliğinin kendine has kuralları bulunmaktadır. Turnuvada 32 takım, 2 konferansa ayrılmakta ve bu konferanslar da kendi içerisinde 4 takım oluşturulmaktadır. Konferans içerisinde yapılan eşleşmeler sonucunda playoff turuna katılmaya hak kazanan takımlar arasında son karşılaşmalar yapılarak kupanın sahibi bulunmaktadır. Ancak takımların playoff turuna kalıp kalmayacağı belirlenirken alışılagelmiş kurallar dışında etmenler bulunmaktadır. Alışılagelmiş lig kurallarından farklı olarak galibiyete göre sıralama yapılmamaktadır. Sıralamada tarafların galibiyet mağlubiyet sayıları yanında averajları, kazanma marjları, defans ve hücum sıralamaları, basit sıralamaları, kazanma marjları gibi istatistikler de hesaba katılmaktadır. Bu çalışmada takımların, Superbowl kupasını kazanabilmek için hangi kriterlere önem vermesi gerektiği incelenmiştir. Bu inceleme yapılırken Github üzerinden bulunan organizasyona 2000 ve 2019 yılları arasında katılan takımların istatistiklerinden oluşan veri seti kullanılmıştır.
+Yer alan değişkenlerin hepsinin nihai hedef olan kupayı kazanmaya etki ağırlığı farklıdır. Hangi değişkenin takımı nihai hedefe götürme konusunda önem taşıdığı, hangi değişkenlerin ise nihai hedefin sağlanmasında istatistiki olarak anlam göstermediğinin incelendiği bu çalışmada her takımın sezon boyunca katıldığı 16 karşılaşmanın en az yarısını kazanmasının kupayı kazanmada etkisinin olup olmadığı t testi ile, kazanma sayısı ile üretilen skor arasında bir ilişki olup olmadığı doğrusal regresyon analizi ile, takımın savunma sıralamasında iyi olup olmamasının playoff turuna kalmasında etkisi olup olmadığı Anova testi ile araştırılmıştır.
+Araştırma neticesinde bulunan sonuçlar neticesinde takımların Superbowl kupasını kazanmak için wins ve points for değişkenine önem vermesi gerektiği, defensive ranking değişkeninin playoff turuna katılma ile ters yönlü ilişkisi olduğu tespit edilmiştir.
+\end{abstract}
+
+\hypertarget{giriux15f}{%
+\section{Giriş}\label{giriux15f}}
+
+Bu çalışmada Github üzerinden bulunan veri seti ile 2000 ve 2019 yılları arasında Amerikan Futbol Liginde yarışan takımların verileri değerlendirildi. Çalışma kapsamında her yıl ligde yer alan 32 takımın galibiyet ve mağlubiyet sayıları, maçlarda aldıkları toplam puanlar ile kaybettikleri toplam puanlar ve bu puan farkı ile belirlenen averajları, takımların ligdeki basit sıralamaları, hücum sıralamaları ve savunma sıralamaları, rakiplerin gücü, galibiyet marjları, playoff'a kalıp kalmama ve Superbowlu kazanıp kazanmama durumları her yıl için ayrı ayrı değerlendirildi.
+
+\hypertarget{uxe7alux131ux15fmanux131n-amacux131}{%
+\section{Çalışmanın Amacı}\label{uxe7alux131ux15fmanux131n-amacux131}}
+
+Bu araştırma ile Amerika Birleşik Devletlerinin en popüler spor organizasyonu olan Superbowl etkinliğinde kupayı kazanmayı etkileyen faktörleri araştırmak hedeflenmiştir. Superbowl Öncesinde ülkenin farklı şehir ve eyaletlerinden gelen 32 takım, 2 konferansa ayrılır (AFC ve NFC). Konferans içerisindeki 16 takım da, 4er kişiden oluşan 4 takım oluşturur. Her konfe- ranstan 6 takım Playoffs'a kalmaya hak kazanır. Playoffs'a kalmaya hak kazanan takımlar, her grubun 1.si ve en iyi 2 adet 2.si olmaktadır. Playoffta eleme usulüyle birer maç oyna- nır ve kalan son 2 takım arasında yapılan maç ile Amerikan Futbol Liginin şampiyonluk mücadelesi olan Superbowl'un kazananı belirlenir. Superbowl'u kazanmak için ilk gereklilik olan playoff'a kalmak için sadece galip olmak yeterli gelmemektedir. Galip gelinen takımın ne kadar kuvvetli olduğu, diğer takımların atmış oldukları gol sayısı gibi doğrudan takımı etkilemeyen faktörler de gruplardan çıkmak için önemli kriterler arasında yer almaktadır.
+Kullanılan veri setinde yer alan wins değişkeni, takımların sezonda kazandığı karşılaşma sayısını, loss değişkeni takımların sezon boyunca kaybettiği karşılaşma sayısını, points for değişkeni takımların sezon boyunca ürettikleri skoru, points against değişkeni rakiplerin ürettikleri skoru, points differantial değişkeni ise skorların birbirinden çıkarılması ile bulunan averajı ifade etmektedir.
+Margin of victory takımların her maçta kazanma marjını ifade eder. Kazanma marjı, takımın sezon boyunca kazandığı/kaybettiği karşılaşmaları, karşılaşma başına ortalama kaç sayı önde/geride tamamladığının hesaplanmasıdır.
+Strenght of schedule takımların sezon boyunca karşılaştıkları rakiplerinin kazanma oranlarını ifade eder. Bu değişken Superbowl turnuvasında her takım birbiri ile karşılaşmadığından daha güçlü takımlarla karşılaşan takımlar aleyhine bir dezavantaj oluşmasını engellemektedir.
+Simple rating basit sıralamayı, Offensive ranking değişkeni hücum sıralamasını, Defensive ranking değişkeni, savunma sıralamasını, Playoffs değişkeni takımların o sezonda playoff turuna kalıp kalmadığını, Sb winner değişkeni, her sezon Superbowl kupasını kazanan takımı ifade etmektedir.
+Gruplardan çıkmak için bakılan kriterlerin birbiri ile ilişkisinin araştırıldığı bu çalışma ile, takımların Superbowl'u kazanmasını etkileyen kriterleri neler olduğu araştırılacaktır.
+
+\hypertarget{literatuxfcr}{%
+\section{Literatür}\label{literatuxfcr}}
+
+Amerika Birleşik Devletleri'ndeki en popüler düzenli televizyon yayını olan Super Bowl, Amerika Birleşik Devletleri'nde her yıl düzenlenen, National Football League'in sezon şam- piyonunu belirleyecek olan şampiyonluk maçıdır. kalan son 2 takım arasında yapılan bu maç ile önceki yılın yaz aylarında başlamış olan sezon sonlanmakta ve sezonun şampiyonu belirlenmektedir.@Redelmeier Super Bowl, ilk elli yılında Amerika Birleşik Devletleri'nde sıradan bir lig şampiyonası maçından ibaretken, günümüzde ülke sınırları içerisinde hem bir tatil günü hem de bir mega etkinlik olarak kutlanmaktadır. Dyreson M. (\protect\hyperlink{ref-Hopsicker}{2017}) Kimlik teorisine göre bireyler kendilerini çeşitli sosyal gruplara üyeliklerine göre tanımlar. Brown (\protect\hyperlink{ref-Brown}{2000}) Mevcut bir çalışmada, gelişmiş kolektif benlik saygısı, bir spor etkinliğine ev sahipliği yapıldığında bireyin bir topluluk olarak artan moralini ifade eder.@Brewer Bu nedenle halkın Super Bowl'a olan ilgisi incelenmesi gereken bir durumdur. Amerika'da Super Bowl'u ortalama olarak 100 milyon seyirci izlemektedir. Super Bowl Amerikan televizyon yayınlarında tarihin en fazla reytingini almaktadır.@Ceviker SuperBowl, Amerika Birleşik Devletleri vatandaşları için sadece bir final maçından ibaret değildir. Final maçının yayınlandığı tarihte herkes televizyon başındadır. Hatta yapılan bir araştırma ile Super Bowl televizyon yayınından sonra araba kazaları neticesinde yaşanan ölümlerin yüzde 41'lik göreli artış oranında arttığı tespit edilmiştir.@Redelmeier
+
+\hypertarget{veri}{%
+\section{Veri}\label{veri}}
+
+Çalışmada kullanılan veri setinin kaynağı Github'dır, ham veri üzerinde herhangi bir işlem yapılmamıştır. Veri seti ile ilgili özet istatistikler aşağıda verilmiştir.
+
+\hypertarget{verileri-import-etme}{%
+\subsection{Verileri import etme}\label{verileri-import-etme}}
+
+library(tidyverse)
+library(readxl)
+superbowl\_data \textless- read\_excel(``C:/Users/begum/OneDrive/Masaüstü/superbowl\_data.xlsx'')
+View(superbowl\_data)
+superbowl\_data
+
+\hypertarget{uxf6zet-istatistikler}{%
+\subsection{Özet istatistikler}\label{uxf6zet-istatistikler}}
+
+summary(superbowl\_data)
+
+\hypertarget{yuxf6ntem-ve-veri-analizi}{%
+\section{Yöntem ve Veri Analizi}\label{yuxf6ntem-ve-veri-analizi}}
+
+\hypertarget{anova-testi}{%
+\subsection{ANOVA testi}\label{anova-testi}}
+
+ANOVA testi, playoffs ve defensive ranking arasında yapılmıştır.
+data \textless- data.frame(superbowl\_data\(defensive_ranking, superbowl_data\)playoffs)
+model \textless- lm(superbowl\_data\(playoffs ~ factor(superbowl_data\)defensive\_ranking), data=data)
+anova\_result \textless- anova(model)
+print(anova\_result)
+
+Defensive ranking değişkeni ile playoffs değişkeni arasında anlamlı bir ilişki olup olmadığının test edilmesi için ANOVA testi yapılmıştır. Yapılan ANOVA testi sonuçları incelendiğinde playoffs değişkeninin defensive\_ranking değişkenine göre istatistiksel olarak anlamlı bir ilişkisi olduğunu görülmektedir. ANOVA analizinde, faktör değişken (defensive\_ranking) ile yanıt değişkeni (playoffs) arasındaki varyansın farklılığının anlamlılığını test ederiz. ANOVA tablosunda, factor(superbowl\_data\$defensive\_ranking) satırı faktör değişkenin etkisini temsil ederken, Residuals satırı hata varyansını temsil eder. Df sütunu ise, serbestlik derecelerini gösterir. Sum Sq sütunu, toplam kareler toplamını temsil eder. Mean Sq sütunu, ortalama kareler toplamını gösterir. F value sütunu, faktör etkisinin istatistiksel anlamlılığını ifade eden F istatistiğini verir. Pr(\textgreater F) sütunu, p değerini gösterir. Analiz neticesinde elde edilen sonuçlar, faktör değişken olan defensive\_ranking'in playoffs değişkenine etkisi olduğunu ve bu etkinin istatistiksel olarak anlamlı olduğunu göstermektedir. Pr(\textgreater F) değeri 0.001'e yakın olduğu için, bu ilişkinin tesadüfi olmadığı ve anlamlı olduğu sonucuna varabiliriz.
+
+Bu araştırma sırasında wins ve points for değişkeni arasında basit doğrusal regresyon analizi yapılmıştır. Yapılan regresyon analizi sonucunda wins değişkeninin points for değişkeni üzerinde anlamlı bir etkiye sahip olduğu gözlemlenmiştir. Katsayılar bölümünde wins değişkeninin eğim (slope) katsayısı 16.9037 olarak hesaplanmıştır bu katsayı her bir ekstra kazanılan maç için ortalama olarak puanların 16.9037 artacağını ifade etmektedir. Ayrıca, kesme noktası (intercept) katsayısı olan Intercept için tahmin edilen değer 215.3192'dir ki bu katsayı da kazanılan maç sayısı sıfır olduğunda beklenen ortalama puanın 215.3192 olduğunu ifade etmektedir. Analize ayrıca R-kare (R-squared) değeri 0.533 olarak hesaplanmıştır, yani modelin açıkladığı varyansın \%53.3'ünü wins değişkeni açıklamaktadır ki bu modelin veri setindeki değişikliğin büyük bir kısmını açıkladığını göstermektedir. Son olarak, analiz neticesinde F istatistiği 726 olarak hesaplanmış ve p-değeri \textless{} 2.2e-16 (çok düşük) olarak bulunmuştur. Bu da, wins değişkeninin puanları açıklamada istatistiksel olarak anlamlı olduğunu göstermektedir. Bu sonuçlar, wins ve points for değişkeni arasında pozitif bir ilişki olduğunu ve kazanılan her maçın takımın puanlarını artırdığını göstermektedir.
+
+\hypertarget{basit-doux11frusal-regresyon}{%
+\subsection{Basit Doğrusal Regresyon}\label{basit-doux11frusal-regresyon}}
+
+data \textless- data.frame(superbowl\_data\(wins, superbowl_data\)points\_for)
+model \textless- lm(superbowl\_data\(points_for ~ superbowl_data\)wins, data = data)
+summary(model)
+
+library(ggplot2)
+plot \textless- ggplot(data, aes(x = superbowl\_data\(wins, y = superbowl_data\)points\_for)) +
+geom\_point() +
+geom\_smooth(method = ``lm'', se = FALSE) +
+labs(x = ``Wins'', y = ``Points For'') +
+theme\_minimal()
+print(plot)
+
+\hypertarget{normallik-iuxe7in-shapiro-wilk-testi}{%
+\subsection{Normallik için Shapiro Wilk Testi}\label{normallik-iuxe7in-shapiro-wilk-testi}}
+
+dif\_cikti \textless- shapiro.test(superbowl\_data\(points_differential) schedule_cikti <- shapiro.test(superbowl_data\)strength\_of\_schedule)
+print(dif\_cikti)
+cat(``\n'')
+print(schedule\_cikti)
+
+\hypertarget{t-testi}{%
+\subsection{t-testi}\label{t-testi}}
+
+t.test(superbowl\_data\(wins~ superbowl_data\)sb\_winner)
+Yapılan t testinde,
+H0:Kazanan takımların ortalama kazanma(win) sayısı = 8'dir.
+Bu t-test sonucunda elde edilen bilgiler şunlardır:
+t değeri: -11.696
+Serbestlik derecesi (df): 25.007
+p değeri: 1.238e-11 (çok düşük bir p değeri)
+Hipotez testi sonucunda p değeri, 0.05 anlamlılık düzeyinden çok daha düşüktür.Bu da kazanan takımların ortalama win sayısı ile 8 arasında anlamlı bir fark olduğunu gösterir.
+Hipotez testi sonucunda p değeri, 0.05 anlamlılık düzeyinden çok daha düşüktür.Bu da kazanan takımların ortalama win sayısı ile 8 arasında anlamlı bir fark olduğunu gösterir.
+Örnekleme verilerine dayanarak elde ettiğimiz tahminlere göre, grup 1'in (sb\_winner = 0, yani kaybeden takımlar) ortalama win sayısı 7.859223, grup 2'nin (sb\_winner = 1, yani kazanan takımlar) ortalama win sayısı ise 11.85'tir.
+Sonuç olarak, bu t-testi sonucuna dayanarak, kazanan takımların ortalama win sayısının 8'den anlamlı bir şekilde farklı olduğunu söyleyebiliriz.
+
+\hypertarget{regresyon-analizi}{%
+\subsection{Regresyon Analizi}\label{regresyon-analizi}}
+
+library(``ggpubr'')
+ggscatter(superbowl\_data,
+x = ``points\_differential'',
+y = ``strength\_of\_schedule'',
+color = ``steelblue'',
+add = ``reg.line'',
+add.params = list(color = ``blue''),
+conf.int = TRUE,
+cor.coef = TRUE,
+cor.coef.coord = c(15, 1),
+cor.method = ``pearson'',
+ggtheme = theme\_minimal())
+
+\hypertarget{normallik-iuxe7in-shapiro-wilk-testi-1}{%
+\subsection{Normallik için Shapiro Wilk Testi}\label{normallik-iuxe7in-shapiro-wilk-testi-1}}
+
+shapiro.test(superbowl\_data\$points\_differential)
+p değeri (p=0.01136) 0.05 anlamlılık düzeyinden küçüktür, bu da verilerin dağılımının normal dağılımdan önemli ölçüde farklı olduğunu gösterir.
+Başka bir deyişle, normal dağılım olduğu varsayılamaz.
+
+shapiro.test(superbowl\_data\$strength\_of\_schedule)
+p değeri (p=0.1088) 0.05 anlamlılık düzeyinden büyüktür, bu da verilerin dağılımının normal dağılımdan önemli ölçüde farklı olmadığını gösterir.
+Başka bir deyişle, normal dağılım olduğu varsayılır.
+
+\hypertarget{histogram}{%
+\subsection{Histogram}\label{histogram}}
+
+Strength of schedule değişkeninin histogramı şekildeki gibidir.
+y ekseninde frekans, x ekseninde strength of schedule değişkeni yer almaktadır.
+
+ggplot(superbowl\_data) +
+geom\_histogram(aes(x = strength\_of\_schedule))
+
+\hypertarget{suxfctun-grafiux11fi}{%
+\subsection{Sütun Grafiği}\label{suxfctun-grafiux11fi}}
+
+library(ggplot2)
+playoff\_teams \textless- superbowl\_data{[}superbowl\_data\(playoffs == 1, ] playoff_wins <- playoff_teams\)wins
+data \textless- data.frame(Team = playoff\_teams\$team, Wins = playoff\_wins)
+ggplot(data, aes(x = Team, y = Wins)) +
+geom\_bar(stat = ``identity'', fill = ``blue'') +
+xlab(``Teams'') +
+ylab(``Wins'') +
+ggtitle(``Playoff Teams - Total Wins'') +
+theme(axis.text.x = element\_text(angle = 45, hjust = 1))
+
+Bu analiz yapılırken playoffa kalan takımların toplam galibiyet sayıları sütun grafiğinde gösterilmiştir.
+
+\hypertarget{sonuuxe7}{%
+\section{Sonuç}\label{sonuuxe7}}
+
+Yukarıda yapılan istatistiki analizler neticesinde, takımların Superbowl kupasını kazanabilmesi için wins değişkeninin önem arz ettiğini, takımların galibiyete önem göstermeleri gerektiği sonucuna götürmektedir.
+Bir diğer analiz neticesinde wins değişkeni ile points for değişkeni arasında pozitif yönlü bir ilişki olduğu, points for değişkenindeki artışın wins değişkenini olumlu yönde etkilediği sonucuna ulaşılmıştır. Bu sonuç, Superbowl kupasını almak isteyen takımların skor üreterek karşılaşmalarda kazanması ve topladığı galibiyetler neticesinde Superbowl galibi olmasının istatistiki olarak anlamlı olduğunu göstermektedir.
+Yapılan bir diğer analiz neticesinde ancak defensive ranking değişkeni ile Superbowl'u kazanmanın gerekli koşulu olan playoff turuna kalma arasında ters yönlü ilişki olduğu sonucuna ulaşılmıştır. Bu analiz de, takımların Superbowl kupasını kazanabilmek için defensive ranking değişkenine vermeleri gereken önemin, diğer değişkenlere nazaran arasında alt sıralarda olduğu sonucuna götürmektedir.\\
+Gruplardan çıkmak için bakılan kriterlerin birbiri ile ilişkisinin araştırıldığı bu çalışma ile, takımların Superbowl'u kazanmasını etkileyen kriterleri neler olduğu sorusuna cevap verilmeye çalışılmıştır. Bulunan sonuçlar baz alınan değişkenlerin hepsinin aynı etki düzeyine sahip olmadığı, hatta bazı değişkenlerin ters yönlü etkiye neden olduğunu göstermiştir.
+Bu çalışmada Pearson Korelasyon Analizi yapmak hedeflenmiştir ancak değişkenlere Normallik için Shapiro Wilk Testi uygulandıktan sonra değişkenlerin ikisinin de normal dağılımdan gelmediği görülmüştür.
+Veri setinde yer alan değişkenlere takımların gruplardan çıkarak playoff turuna kalması ve neticesinde Superbowl kupasını kazanmasında belli bir kural sıralaması ile bakılmaktadır. Birbirini etkileyen değişkenlere farklı aşamalarda kural sırası gözetilerek bakıldığından aslında ilişkili olan, birbirini doğrudan etkileyen değişkenler sonucu aynı oranda etkileyememiştir. Bu nedenle kurallara göre daha önemli görünen değişken verilere göre daha önemsiz bulunabilmiştir. İleride bu çalışma, Amerikan Futbol Liginin grup sıralaması kuralları gözetilerek, kurallar ile belirlenen değişkenlerin öncelik sıralaması gözetilerek daha faydalı hale getirilebilir.
+
+\newpage
+
+\hypertarget{references}{%
+\section{Kaynakça}\label{references}}
+
+\hypertarget{refs}{}
+\begin{CSLReferences}{1}{0}
+\leavevmode\vadjust pre{\hypertarget{ref-Brown}{}}%
+Brown, R. (2000). Social identity theory: Past achievements, current problems and future challenges. \emph{European Journal of Social Psychology}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Hopsicker}{}}%
+Dyreson M., H. P. \&. (2017). Super Bowl Sunday: A National Holiday and a Global Curiosity. \emph{The International Journal of the History of Sport}.
+
+\end{CSLReferences}
+
+\end{document}
