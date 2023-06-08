@@ -38,8 +38,7 @@ knitr::opts_chunk$set(cache = FALSE, echo = TRUE, message = FALSE, warning = FAL
 <!-- ======================================================================= -->
 <!-- ============================== NOTLAR ================================= -->
 <!-- ======================================================================= -->
-[^1]: Öğrenci Numarası, [Github Repo](https://github.com/Sunatemelcioglu)
-19080245
+[^1]: 19080245, [Github Repo](https://github.com/Sunatemelcioglu)
 # Final Hakkında Önemli Bilgiler
 
 \colorbox{BurntOrange}{GITHUB REPO BAĞLANTINIZI BU DOSYANIN 37. SATIRINA YAZINIZ!}
